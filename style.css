@@ -87,3 +87,13 @@ section {
 .project .project-description {
     display: none;
 }
+
+.skills-container img {
+    width: 150px;
+    height: 100px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+}
