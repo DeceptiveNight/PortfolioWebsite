@@ -1,11 +1,18 @@
 html {
     font-size: 16px;
+    background-color: white;
 }
 
+main {
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
 
 h1 {
     text-align: center;
     font-size: 2.25rem;
+    color: black;
 }
 
 nav {
@@ -13,18 +20,18 @@ nav {
     display: center;
 }
 
-nav ul {
+#nav-list{
     display: flex;
     justify-content: space-evenly;
 }
 
-nav li{
+#nav-list li{
     list-style-type: none;
     display: inline;
     font-size: 1.5rem;
 }
 
-nav li a {
+#nav-list li a {
     text-decoration: none;
     color: black;
 
@@ -35,12 +42,14 @@ section {
 }
 
 .section-header {
-    background-color: skyblue;
+    background-color: black;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     margin-bottom: 75px;
+    color: white;
+    font-weight: bolder;
 }
 
 #about-me-content{
@@ -56,6 +65,7 @@ section {
 #about-me p {
     line-height: 30px;
     font-size: 1.25rem;
+    margin-left: 20px;
 }
 
 .project {
@@ -80,7 +90,6 @@ section {
 .project  img {
     width: 100%;
     height: 70%;
-    
 }
 
 
@@ -90,10 +99,404 @@ section {
 
 .skills-container img {
     width: 150px;
-    height: 100px;
+    height: auto;
 }
 
 .skills-container {
     display: flex;
     justify-content: space-evenly;
+}
+
+#skills {
+    margin-bottom: 300px;
+}
+
+
+/*CSS below this comment applies to the contact page - contactPage.html */
+
+
+#contact-header h1 {
+    text-align: center;
+}
+
+
+#contact-main p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+
+#contact-links a img {
+    width: 100px;
+    height: 100px;
+}
+
+#back-button {
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+#contact-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* MEDIA QUERIES TO MAKE WEBSITE RESPONSIVE */
+
+/*Mobile devices*/
+@media only screen and (max-width: 500px) {
+
+    main {
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    h1 {
+        font-size: 1.25rem;   
+     }
+
+    #nav-list li {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+    }
+
+    .section-header {
+        width: 100%;
+        height: 40px;
+    }
+
+    #about-me-content{
+        display: block;
+        
+    }
+    
+    #about-me img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    #about-me p {
+        line-height: 30px;
+        font-size: 1rem;
+        margin-left: 0px;
+    }
+
+    .project {
+        width: 100%;
+        height: 400px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        margin-bottom: 30px;
+    }
+    
+
+    #projects-content {
+        display: block;
+    }
+
+    .skills-container img {
+        width: 100px;
+        height: auto;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills {
+        margin-bottom: 100px;
+    }
+    
+
+    #contact-main p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    #contact-links {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #contact-links a img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #back-button {
+        width: 70px;
+        height: 30px;
+        border-style: solid;
+        background-color: black;
+        color: white;
+        font-size: 0.75rem;
+    }
+    
+    
+}
+
+/*Tablet Devices */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    main {
+        border-color: black;
+        border-width: 4px;
+        border-style: solid;
+    }
+
+    h1 {
+        font-size: 1.8rem;   
+     }
+
+    #nav-list li {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .section-header {
+        width: 100%;
+        height: 60px;
+    }
+
+    #about-me-content{
+        display: block;
+        
+    }
+    
+    #about-me img {
+        width: 80%;
+        height: 300px;
+    }
+    
+    #about-me p {
+        line-height: 30px;
+        font-size: 1.25rem;
+        margin-left: 0px;
+    }
+
+    .project {
+        width: 100%;
+        height: 400px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        margin-bottom: 30px;
+    }
+    
+
+    #projects-content {
+        display: block;
+    }
+
+    .skills-container img {
+        width: 100px;
+        height: auto;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    #skills {
+        margin-bottom: 100px;
+    }
+    
+
+    #contact-main p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    #contact-links {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #contact-links a img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #back-button {
+        width: 70px;
+        height: 30px;
+        border-style: solid;
+        background-color: black;
+        color: white;
+        font-size: 0.75rem;
+    }
+}
+
+
+/*Tablet Landscape*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        border-color: black;
+        border-width: 4px;
+        border-style: solid;
+    }
+
+    h1 {
+        font-size: 2rem;   
+     }
+
+    #nav-list li {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .section-header {
+        width: 100%;
+        height: 60px;
+    }
+
+    #about-me-content{
+        display: block;
+        
+    }
+    
+    #about-me img {
+        width: 80%;
+        height: 400px;
+    }
+    
+    #about-me p {
+        line-height: 30px;
+        font-size: 1.25rem;
+        margin-left: 0px;
+    }
+
+    #projects {
+        display: grid;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .project {
+        width: 100%;
+        height: 400px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        text-align: center;
+        background-color: white;
+        color: black;
+        margin-bottom: 30px;
+    }
+    
+
+    #projects-content {
+        display: block;
+    }
+
+    .skills-container img {
+        width: 110px;
+        height: auto;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
+    #skills {
+        margin-bottom: 100px;
+    }
+    
+    
+
+    #contact-main p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    #contact-links {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #contact-links a img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #back-button {
+        width: 70px;
+        height: 30px;
+        border-style: solid;
+        background-color: black;
+        color: white;
+        font-size: 0.75rem;
+    }
+}
+
+/*Laptops */
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+   
+
+    .skills-container img {
+        width: 120px;
+        height: auto;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+    }
+
+    #skills {
+        margin-bottom: 100px;
+    }
+}
+
+
+/*Desktops*/
+
+@media only screen and (min-width: 1601px) {
+
 }

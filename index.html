@@ -4,6 +4,7 @@
     <head>
         <title>My Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta name="viewport" content="width=device-width">
     </head>
 
     <body>
@@ -12,10 +13,10 @@
                 My Portfolio - David Guerrero
             </h1>
             <nav>
-                <ul>
+                <ul id="nav-list">
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="contactPage.html">Contact</a></li>
                 </ul>
             </nav>
@@ -32,10 +33,14 @@
                 <div id="about-me-content">
                     <img src="https://th.bing.com/th/id/OIP.EXzuLGIYiqbsSCpNEfytlgHaHM?w=194&h=189&c=7&r=0&o=5&pid=1.7"/>
                     <p>
-                        Hi there! I'm David, the greatest programmer in humankind. 
-                        Over my programming career, I have created countless programs that have changed the course of humanity.
-                        In my spare time, I like to go outside and try all the delicious food my city of Santa Ana has to offer. I also hit the gym 6 days a week to keep myself ripped and healthy!
-                        All jokes, aside, I'm a senior currently attending Cal state Fullerton. My goal is to find a full stack engineering job by the end of next year. That's why i've been doing the full stack engineer course at codecademy!
+                        Hello! My name is David. I’m a senior studying Computer Science with a strong focus on web development.
+                         Over the course of my studies, I've developed a solid foundation in coding, problem-solving, and 
+                         software engineering principles. My passion for web development drives me to create intuitive and 
+                         dynamic user experiences. I've gained hands-on experience through various projects and internships, 
+                         honing my skills in HTML, CSS, JavaScript, and popular frameworks. I’m always eager to learn new 
+                         technologies and stay updated with industry trends. Outside of academics, I enjoy collaborating on 
+                         open-source projects and exploring innovative solutions to real-world problems. My goal is to leverage
+                         my skills to build impactful and user-centric web applications.
                     </p>
                 </div>
             </section>
@@ -54,7 +59,7 @@
                             Portfolio Website
                         </h3>
 
-                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1618267119643/vGeyQvCM9.png?auto=compress,format&format=webp" />
+                        <img id="project-one-image" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1618267119643/vGeyQvCM9.png?auto=compress,format&format=webp" />
                         
                         <p class="project-description">
                             Information about project
@@ -69,10 +74,10 @@
                         
                         </h3>
                         
-                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1618267119643/vGeyQvCM9.png?auto=compress,format&format=webp" />
+                        <img id="project-two-image" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1618267119643/vGeyQvCM9.png?auto=compress,format&format=webp" />
 
                         <p class="project-description">
-                            Information about project
+                            A portfolio website that 
                         </p>
                     </div>
                 </div>
@@ -99,7 +104,15 @@
 
         </main>
         <footer> 
+            <div class="section-header">
+                <h2>
+                    End of Page
+                </h2>
+            </div>
         </footer>
+
+        <script src="script.js">
+        </script>
     </body>
 
 </html>
